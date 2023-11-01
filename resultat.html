@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Résultat - What's your name</title>
+    <link href="style/style.css" rel="stylesheet" />
+</head>
+<body>
+    <script>
+        // Récupérez le nom à partir de l'URL
+        var params = new URLSearchParams(window.location.search);
+        var nom = params.get("nom");
+
+        function normaliserChaine(chaine) {
+                return chaine
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .replace(/'/g, "");
+        }
+    
+        // Fonction pour rediriger en fonction du nom (insensible à la casse et aux accents)
+        function redirigerEnFonctionDuNom(nom) {
+            var noms = {
+                "lucie": "personne/lucie.html",
+                "chaton": "personne/lucie.html",
+                "chat": "personne/lucie.html",
+                "chéri": "personne/lucie.html",
+                "choupichat": "personne/lucie.html",
+
+                "thomas": "personne/thomas.html",
+                "toto": "personne/thomas.html",
+
+                "christophe": "personne/christophe.html",
+                "tof": "personne/christophe.html",
+
+                "pierre": "personne/pierre.html",
+
+                "maman": "personne/maman.html",
+                "karine": "personne/maman.html",
+
+                "papa": "personne/papa.html",
+                "yves": "personne/papa.html",
+
+                "milena": "personne/milena.html",
+                "soeur": "personne/milena.html",
+
+                "geoffroy": "personne/geoffroy.html",
+                "frere": "personne/geoffroy.html",
+
+                "josephine": "personne/josephine.html",
+                "djo": "personne/josephine.html",
+                
+                "aurelia" : "personne/aurelia.html",
+                "aure" : "personne/aurelia.html"
+            };
+
+            var nomEnMinuscules = normaliserChaine(nom.toLowerCase()); // Convertir en minuscules et normaliser
+    
+            if (noms[nomEnMinuscules]) {
+                window.location.href = noms[nomEnMinuscules]; // Redirection en fonction du nom normalisé
+            } else {
+                window.location.href = "nom-inconnu.html"; // Redirection vers une page pour les noms inconnus
+            }
+        }
+    
+        // Appeler la fonction pour effectuer la redirection
+        redirigerEnFonctionDuNom(nom);
+    </script>
+      
+</body>
+</html>
