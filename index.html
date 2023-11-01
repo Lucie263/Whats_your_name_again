@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil - What's your name</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/index.css" rel="stylesheet" />
+    </head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+
+        <section  class="saisie-nom">
+            <h2>Entrez votre nom  </h2>
+            <input type="text" id="nom" />
+            <button id="valider">Valider</button>
+        </section>
+
+        <script>
+            document.getElementById("valider").addEventListener("click", function() {
+                var nom = document.getElementById("nom").value;
+                // Redirigez vers la page de résultat en incluant le nom en tant que paramètre dans l'URL
+                window.location.href = "resultat.html?nom=" + encodeURIComponent(nom);
+            });
+        </script>
+
+    <footer class="element">
+        <a href="a_propos.html" class="lien-icone">
+        </a>
+        <div>
+            <a href="a_propos.html">A propos de moi</a>
+        </div>
+    </footer>
+
+    </main>
+ 
+</body>
+
+</html>
