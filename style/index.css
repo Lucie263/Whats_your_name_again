@@ -1,0 +1,53 @@
+.saisie-nom {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrer verticalement les éléments */
+  align-items: center; /* Centrer horizontalement les éléments */
+  text-align: center;
+  padding-top: 35vh;
+}
+
+.saisie-nom h2{
+  font-size: 3.5em;
+}
+.saisie-nom input {
+  padding: 10px; /* Ajustez cette valeur selon vos préférences */
+  border-radius: 5px;
+  margin: 20px;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+}
+.saisie-nom button {
+  display: block;
+  margin: 15px;
+  width: 100%; /* Remplir toute la largeur disponible */
+  max-width: 300px; /* Limiter la largeur pour un meilleur aspect visuel */
+}
+
+.saisie-nom button {
+  background: linear-gradient(#ed92e9, #acaeed);
+  color: background-color;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px; /* Augmentez la taille du rembourrage pour le bouton */
+  font-size: 30px; /* Réduire la taille de la police */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.saisie-nom button:hover {
+  background: linear-gradient(#855282, #8e86b5);
+  transform: scale(1.05);
+}
+
+.lien-icone {
+  display: block;
+  text-align: center; /* Pour centrer le texte horizontalement */
+  margin-top: 10px; /* Ajustez la valeur pour déplacer le lien vers le bas */
+}
+
+
