@@ -50,4 +50,11 @@
   margin-top: 10px; /* Ajustez la valeur pour déplacer le lien vers le bas */
 }
 
+.image-container {
+  margin-top: 130px;
+  margin-left: 55px;
+}
 
+.text-container {
+  margin-left: 20px; /* Ajustez la valeur selon vos besoins */
+}

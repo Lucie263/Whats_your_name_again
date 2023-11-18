@@ -26,7 +26,29 @@
                 // Redirigez vers la page de résultat en incluant le nom en tant que paramètre dans l'URL
                 window.location.href = "resultat.html?nom=" + encodeURIComponent(nom);
             });
+
         </script>
+
+        <img id="image-container" src="blink.jpeg" width="100" class="image-container" ">
+        <p id = "text-container" class="text-container">What's your age again ?</p>
+
+        <script>
+            // Récupérez les éléments HTML
+            var imageContainer = document.getElementById('image-container');
+            var textContainer = document.getElementById('text-container');
+    
+            // Ajoutez un gestionnaire d'événement de clic à l'image
+            imageContainer.addEventListener('click', function() {
+                textContainer.innerHTML = '30 years old... yeah';
+                window.open("https://www.youtube.com/watch?v=K7l5ZeVVoCA&ab_channel=blink182VEVO", "_blank");
+            });
+
+            textContainer.addEventListener('click', function() {
+                textContainer.innerHTML = '30 years old... yeah';
+                window.open("https://www.youtube.com/watch?v=K7l5ZeVVoCA&ab_channel=blink182VEVOgit ", "_blank");
+            });
+        </script>
+ 
 
     <footer class="element">
         <a href="a_propos.html" class="lien-icone">

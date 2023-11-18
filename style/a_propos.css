@@ -1,0 +1,25 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.encadre {
+    padding: 20px;
+    border: 2px solid #ed92e9; /* Couleur de la bordure de l'encadré */
+    border-radius: 10px; /* Coins arrondis de l'encadré */
+    background-color: #fff; /* Couleur de fond de l'encadré */
+    box-shadow: 0 0 10px rgba(252, 252, 252, 0.1); /* Ombre légère autour de l'encadré */
+}
+
+p   {
+    color: #242424;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    text-align: justify;
+}
