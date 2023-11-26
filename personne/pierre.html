@@ -5,15 +5,46 @@
     <title>What's your name again....? Pierre</title>
     <link href="../style/style.css" rel="stylesheet" />
     <link href="../style/basic_pers.css" rel="stylesheet" />
+    <link href="../style/index.css" rel="stylesheet" />
+
+    <style>
+        #myVideo {
+            position: absolute;
+            top: 150px; /* Ajustez la position verticale selon vos besoins */
+            left: 150px; /* Ajustez la position horizontale selon vos besoins */
+        }
+
+        #myVideo2 {
+            position: absolute;
+            top: 200px; /* Ajustez la position verticale selon vos besoins */
+            left: 950px; /* Ajustez la position horizontale selon vos besoins */
+        }
+    </style>
+
 </head>
 <body>
-    <div class="encadre">
-        <!-- Contenu de votre encadré va ici -->
-        
+    <video id="myVideo" width="200" height="400" controls autoplay muted>
+        <source src="C:\Users\lucie\Documents\Programmation\Whats_your_name_again\a8qVNQZ_460sv.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la balise video.
+    </video>
+    
+    <div class="encadre">  
         <p>
             Joyeux anniversaire Nico! <br>
-            Gros bisous à notre batteur/guitariste/directeur artistique préféré ! 😉
+            Gros bisous à notre batteur/guitariste/directeur <br>
+            artistique préféré ! 😉
         </p>
     </div>
+
+    <video id="myVideo2" width="300" height="300" controls autoplay muted>
+        <source src="C:\Users\lucie\Documents\Programmation\Whats_your_name_again\aZDdyN6_460svvp9.webm" type="video/webm">
+        Votre navigateur ne prend pas en charge la balise video.
+    </video>
+
+    <footer class="element">
+        <div class="lien-icone">
+            <a href="../index.html">Accueil</a>
+        </div>
+    </footer>
 </body>
 </html>

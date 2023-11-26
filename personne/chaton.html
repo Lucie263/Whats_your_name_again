@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>What's your name again....? Chaton</title>
+    <link href="../style/style.css" rel="stylesheet" />
+    <link href="../style/basic_pers.css" rel="stylesheet" />
+    <link href="../style/index.css" rel="stylesheet" />
+
+    <style>
+        
+        #texteEnMouvement {
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+            transition: transform 1s ease-in-out;/* Ajout de la transition pour un mouvement plus fluide */
+        }
+
+        #texteEnMouvement2 {
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+            transition: transform 1s ease-in-out;/* Ajout de la transition pour un mouvement plus fluide */
+        }
+
+        #chatImage {
+            position: absolute;
+            transition: left 1s ease-in-out, top 1s ease-in-out; /* Ajout de la transition pour un mouvement plus fluide */
+        }
+
+        #chats {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 282%; /* Position verticale au milieu de l'encadré */
+            left: 50%; /* Position horizontale au milieu de l'encadré */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+ 
+    <img id="chatImage" src="../Nyan_cat.png" alt="Chat Mignon" width="150" height="150">
+    <div id="texteEnMouvement">MIAOU!</div>
+    <div id="texteEnMouvement2">MWWAAAWW!</div>
+            
+    <script>
+        var chatImage = document.getElementById("chatImage");
+        var maxX = window.innerWidth - chatImage.width;
+        var maxY = window.innerHeight - chatImage.height;
+    
+        function deplacerChat() {
+            var nouvellePositionX = Math.random() * maxX;
+            var nouvellePositionY = Math.random() * maxY;
+            chatImage.style.left = nouvellePositionX + "px";
+            chatImage.style.top = nouvellePositionY + "px";
+        }
+
+        function deplacerTexte() {
+            var maxX = window.innerWidth - texteEnMouvement.clientWidth;
+            var maxY = window.innerHeight - texteEnMouvement.clientHeight;
+
+            var nouvellePositionX = Math.random() * maxX;
+            var nouvellePositionY = Math.random() * maxY;
+
+            texteEnMouvement.style.left = nouvellePositionX + "px";
+            texteEnMouvement.style.top = nouvellePositionY + "px";
+        }
+
+        function deplacerTexte2() {
+            var maxX2 = window.innerWidth - texteEnMouvement2.clientWidth;
+            var maxY2 = window.innerHeight - texteEnMouvement2.clientHeight;
+
+
+            var nouvellePositionX2 = Math.random() * maxX2;
+            var nouvellePositionY2 = Math.random() * maxY2;
+
+            texteEnMouvement2.style.left = nouvellePositionX2 + "px";
+            texteEnMouvement2.style.top = nouvellePositionY2 + "px";
+        }
+
+        chatImage.addEventListener("click", function () {
+            // Ouvrir une nouvelle fenêtre vers la vidéo YouTube
+            window.open("https://www.youtube.com/watch?v=mARgyb3asb4&ab_channel=Kneekick", "_blank");
+        });
+
+        // Déplacer l'image de chat toutes les 3 secondes (ajustez le délai selon vos préférences)
+        setInterval(deplacerChat, 2000);
+        setInterval(deplacerTexte, 1000);
+        setInterval(deplacerTexte2, 1000);
+    </script>
+
+
+    <div class="encadre">
+        <!-- Contenu de votre encadré va ici -->
+        <p>Miou mia miou mwaa! Mwaaww miaou miou miiiiou miaaaou !<br>
+            
+        </p>
+        <img id="chats" src="../cats.png" width="150" height="150">
+    </div>
+
+    <footer class="element">
+        <div class="lien-icone">
+            <a href="../index.html">Accueil</a>
+        </div>
+    </footer>
+
+</body>
+</html>

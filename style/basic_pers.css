@@ -10,11 +10,14 @@ body {
 }
 
 .encadre {
+    position: relative; /* Ajout de la propriété position relative */
+    top: -50px; 
     padding: 20px;
     border: 2px solid #ed92e9; /* Couleur de la bordure de l'encadré */
     border-radius: 10px; /* Coins arrondis de l'encadré */
     background-color: #fff; /* Couleur de fond de l'encadré */
     box-shadow: 0 0 10px rgba(252, 252, 252, 0.1); /* Ombre légère autour de l'encadré */
+
 }
 
 p   {

@@ -45,9 +45,11 @@
 }
 
 .lien-icone {
+  position: relative;
   display: block;
-  text-align: center; /* Pour centrer le texte horizontalement */
-  margin-top: 10px; /* Ajustez la valeur pour déplacer le lien vers le bas */
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -1150px;
 }
 
 .image-container {
