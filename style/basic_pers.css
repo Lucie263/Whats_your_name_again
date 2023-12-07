@@ -17,12 +17,25 @@ body {
     border-radius: 10px; /* Coins arrondis de l'encadré */
     background-color: #fff; /* Couleur de fond de l'encadré */
     box-shadow: 0 0 10px rgba(252, 252, 252, 0.1); /* Ombre légère autour de l'encadré */
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
-p   {
+p {
     color: #242424;
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
     text-align: justify;
+    font-size: 23px;
 }
+
+
+.lien-icone {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+

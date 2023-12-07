@@ -44,19 +44,20 @@
   transform: scale(1.05);
 }
 
-.lien-icone {
-  position: relative;
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  margin-left: -1150px;
-}
-
 .image-container {
-  margin-top: 130px;
-  margin-left: 55px;
+  width: 10%; /* La vidéo occupe 100% de la largeur de son conteneur */
+  height: auto;
+  position: fixed;
+  bottom: 120px; /* Ajustez la valeur pour déplacer l'image plus bas */
+  left: 2%;
+  z-index: 1;
 }
 
 .text-container {
-  margin-left: 20px;
+  position: fixed;
+  bottom: 0;
+  bottom: 85px; /* Ajustez la valeur pour déplacer l'image plus bas */
+  left: 2%;
+  z-index: 1;
+  color: white;
 }

@@ -41,6 +41,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.lien-icone {
+  position: relative;
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
 footer {
   padding: 10px;
@@ -51,35 +58,4 @@ footer {
   background-color: white; /* Ajoutez la couleur de fond souhaitée pour le footer */
   color: 333; /* Couleur du texte du footer */
   text-align: 0;  /* Hauteur du pied de page */
-}
-
-
-@media screen and (max-width: 996px) {
-  header nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  header nav img {
-    margin-bottom: 20px;
-  }
-
-  header,
-  footer {
-    padding: 20px 20px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  section {
-    padding: 50px 20px 50px 20px;
-  }
-
-  nav a {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
