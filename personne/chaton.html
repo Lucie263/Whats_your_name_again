@@ -25,6 +25,14 @@
             transition: transform 1s ease-in-out;/* Ajout de la transition pour un mouvement plus fluide */
         }
 
+        #texteEnMouvement3 {
+            position: absolute;
+            color: #ed92e9; /* Ajoutez le signe dièse pour spécifier la couleur hexadécimale */
+            font-weight: bold;
+            font-size: larger;
+            transition: transform 1s ease-in-out; /* Ajout de la transition pour un mouvement plus fluide */
+        }
+
         #chatImage {
             position: absolute;
             transition: left 1s ease-in-out, top 1s ease-in-out; /* Ajout de la transition pour un mouvement plus fluide */
@@ -46,6 +54,7 @@
     <img id="chatImage" src="../Nyan_cat.png" alt="Chat Mignon" width="150" height="150">
     <div id="texteEnMouvement">MIAOU!</div>
     <div id="texteEnMouvement2">MWWAAAWW!</div>
+    <div id="texteEnMouvement3">MIAOU!</div>
             
     <script>
         var chatImage = document.getElementById("chatImage");
@@ -82,6 +91,18 @@
             texteEnMouvement2.style.top = nouvellePositionY2 + "px";
         }
 
+        function deplacerTexte3() {
+            var maxX3 = window.innerWidth - texteEnMouvement3.clientWidth;
+            var maxY3 = window.innerHeight - texteEnMouvement3.clientHeight;
+
+
+            var nouvellePositionX3 = Math.random() * maxX3;
+            var nouvellePositionY3 = Math.random() * maxY3;
+
+            texteEnMouvement3.style.left = nouvellePositionX3 + "px";
+            texteEnMouvement3.style.top = nouvellePositionY3 + "px";
+        }
+
         chatImage.addEventListener("click", function () {
             // Ouvrir une nouvelle fenêtre vers la vidéo YouTube
             window.open("https://www.youtube.com/watch?v=mARgyb3asb4&ab_channel=Kneekick", "_blank");
@@ -91,6 +112,7 @@
         setInterval(deplacerChat, 2000);
         setInterval(deplacerTexte, 1000);
         setInterval(deplacerTexte2, 1000);
+        setInterval(deplacerTexte3, 1000);
     </script>
 
 
