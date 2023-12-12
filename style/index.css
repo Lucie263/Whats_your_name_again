@@ -11,15 +11,15 @@
 }
 
 .saisie-nom h2{
-  font-size: 3.5em;
+  font-size: 5em;
 }
 .saisie-nom input {
-  padding: 10px; /* Ajustez cette valeur selon vos préférences */
+  padding: 20px; /* Ajustez cette valeur selon vos préférences */
   border-radius: 5px;
   margin: 20px;
   border: none;
   width: 100%;
-  max-width: 250px;
+  max-width: 400px;
 }
 .saisie-nom button {
   display: block;
