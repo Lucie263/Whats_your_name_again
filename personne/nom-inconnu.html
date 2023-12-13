@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>What's your name again....? Papa</title>
+    <link href="../style/style.css" rel="stylesheet" />
+    <link href="../style/basic_pers.css" rel="stylesheet" />
+    <link href="../style/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="encadre">
+        <!-- Contenu de votre encadré va ici -->
+        
+        <p><span id="nomInconnu"></span> ... ? <br>
+            Vous êtes un parfait inconnu.
+        </p>
+    </div>
+
+    <script>
+        // Récupérez le nom depuis l'URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var nom = urlParams.get('nom');
+
+        // Affichez le nom dans la page
+        var nomInconnuElement = document.getElementById('nomInconnu');
+        if (nomInconnuElement) {
+            nomInconnuElement.textContent = nom || "Nom inconnu";
+        }
+    </script>
+
+    <footer class="element">
+        <div class="lien-icone">
+            <a href="../index.html">Accueil</a>
+        </div>
+    </footer>
+</body>
+</html>

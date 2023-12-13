@@ -60,9 +60,9 @@
             var nomEnMinuscules = normaliserChaine(nom.toLowerCase()); // Convertir en minuscules et normaliser
     
             if (noms[nomEnMinuscules]) {
-                window.location.href = noms[nomEnMinuscules]; // Redirection en fonction du nom normalisé
+                window.location.href = noms[nomEnMinuscules] ; // Redirection en fonction du nom normalisé
             } else {
-                window.location.href = "nom-inconnu.html"; // Redirection vers une page pour les noms inconnus
+               window.location.href = "personne/nom-inconnu.html?nom=" + encodeURIComponent(nom); // Redirection vers une page pour les noms inconnus
             }
         }
     
