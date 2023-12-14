@@ -1,6 +1,6 @@
 body {
     background-image: url('../fond_djo.png'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin réel de votre image */
-    background-size: ; /* Ajuste la taille de l'image pour couvrir l'ensemble du corps */
+    background-size: cover ; /* Ajuste la taille de l'image pour couvrir l'ensemble du corps */
     background-position: center; /* Centre l'image horizontalement et verticalement */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     }

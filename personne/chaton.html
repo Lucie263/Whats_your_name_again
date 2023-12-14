@@ -33,6 +33,15 @@
             transition: transform 1s ease-in-out; /* Ajout de la transition pour un mouvement plus fluide */
         }
 
+        #texteEnMouvement4 {
+            position: absolute;
+            color: #854eae; /* Ajoutez le signe dièse pour spécifier la couleur hexadécimale */
+            font-weight: bold;
+            font-size: larger;
+            transition: transform 1s ease-in-out; /* Ajout de la transition pour un mouvement plus fluide */
+        }
+
+
         #chatImage {
             position: absolute;
             transition: left 1s ease-in-out, top 1s ease-in-out; /* Ajout de la transition pour un mouvement plus fluide */
@@ -55,6 +64,7 @@
     <div id="texteEnMouvement">MIAOU!</div>
     <div id="texteEnMouvement2">MWWAAAWW!</div>
     <div id="texteEnMouvement3">MIAOU!</div>
+    <div id="texteEnMouvement4">MWWAAAWW!!</div>
             
     <script>
         var chatImage = document.getElementById("chatImage");
@@ -103,6 +113,18 @@
             texteEnMouvement3.style.top = nouvellePositionY3 + "px";
         }
 
+        function deplacerTexte4() {
+            var maxX3 = window.innerWidth - texteEnMouvement4.clientWidth;
+            var maxY3 = window.innerHeight - texteEnMouvement4.clientHeight;
+
+
+            var nouvellePositionX3 = Math.random() * maxX3;
+            var nouvellePositionY3 = Math.random() * maxY3;
+
+            texteEnMouvement4.style.left = nouvellePositionX3 + "px";
+            texteEnMouvement4.style.top = nouvellePositionY3 + "px";
+        }
+
         chatImage.addEventListener("click", function () {
             // Ouvrir une nouvelle fenêtre vers la vidéo YouTube
             window.open("https://www.youtube.com/watch?v=mARgyb3asb4&ab_channel=Kneekick", "_blank");
@@ -113,6 +135,7 @@
         setInterval(deplacerTexte, 1000);
         setInterval(deplacerTexte2, 1000);
         setInterval(deplacerTexte3, 1000);
+        setInterval(deplacerTexte4, 1000);
     </script>
 
 

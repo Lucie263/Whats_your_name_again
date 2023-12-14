@@ -58,3 +58,10 @@ p {
     font-size: 20px;
 }
 
+.piti {
+    position: absolute;
+    color: #fff;
+    font-size: xx-small;
+    bottom: 80px;
+    right: 10px;
+}
